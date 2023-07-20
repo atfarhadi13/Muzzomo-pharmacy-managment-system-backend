@@ -1,0 +1,50 @@
+{% extends 'shared/_MainLayout.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="white_shd full margin_bottom_30 my-5">
+                <div class="full graph_head">
+                    <div class="heading1 margin_0">
+                        <h2>Add Medicine</h2>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-6 p-3">
+                        <label for="medication_name" class="form-label">Medicine Name</label>
+                        <input name="medication_name" id="medication_name" type="text" class="form-control">
+                    </div>
+                    <div class="col-6 p-3">
+                        <label for="customer_name" class="form-label">Customer Name</label>
+                        <input name="customer_name" id="customer_name" type="text" class="form-control">
+                    </div>
+                    <div class="col-6 p-3">
+                        <label for="doctor_name" class="form-label">Doctor Name</label>
+                        <input name="doctor_name" id="doctor_name" type="text" class="form-control">
+                    </div>
+                    <div class="col-6 p-3">
+                        <label for="payment_method" class="form-label">Payment Method</label>
+                        <input name="payment_method" id="payment_method" type="text" class="form-control">
+                    </div>
+                    <div class="col-6 p-3">
+                        <label for="quantity" class="form-label">Quantity</label>
+                        <input name="quantity" id="quantity" type="number" class="form-control">
+                    </div>
+                    <div class="col-6 p-3">
+                        <label for="customer_loan" class="form-label">Customer Load</label>
+                        <input name="customer_loan" id="customer_loan" value="0" type="number" class="form-control">
+                    </div>
+                    <div class="col-12 p-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    <div class="col-12 text-right">
+                        <button class="btn btn-outline-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
